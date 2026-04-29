@@ -10,7 +10,7 @@ Open `index.html` in a browser. That's it.
 
 - Single HTML file with inline CSS and JS — no framework, no build step
 - No API, no backend — fully static
-- Deploy as a static site on Vercel, Netlify, or GitHub Pages
+- Deployed as a static site on Netlify
 
 ## How it works
 
@@ -20,16 +20,26 @@ Open `index.html` in a browser. That's it.
 4. A typing indicator simulates AI "thinking" for 1–2 seconds before each reply
 5. If no keyword matches, the bot falls back to a polite "contact us" message
 
-## Deploy
+## Deploy on Netlify
 
-Drop `index.html` into any static host.
+Option A — drag-and-drop:
+
+1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
+2. Drag the `brewbot` folder onto the page
+3. Done — Netlify gives you a live URL
+
+Option B — Git integration:
+
+1. In Netlify, click **Add new site → Import from Git**
+2. Connect this repo (`claudiablg/brewbot`)
+3. Leave **Build command** empty and set **Publish directory** to `.`
+4. Click **Deploy**
+
+Option C — CLI:
 
 ```bash
-# Vercel
-vercel deploy
-
-# Netlify
-netlify deploy --dir=.
+npm install -g netlify-cli
+netlify deploy --dir=. --prod
 ```
 
 ---
