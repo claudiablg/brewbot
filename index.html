@@ -8,19 +8,20 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg-page: #f5f1ec;
+    --bg-page: #f3eee7;
     --bg-panel: #ffffff;
-    --bg-soft: #ece6de;
-    --bg-input: #f7f3ee;
-    --border: #e3dcd2;
-    --text: #2e2a26;
-    --text-mid: #6b635a;
-    --text-dim: #9a9189;
-    --accent: #8a9a8b;
-    --accent-soft: #b8c4b6;
-    --bot-bubble: #efe9e1;
-    --user-bubble: #8a9a8b;
-    --shadow: 0 1px 2px rgba(46, 42, 38, 0.04), 0 8px 24px rgba(46, 42, 38, 0.06);
+    --bg-soft: #ece5d9;
+    --bg-input: #f6f2eb;
+    --border: #e2d9cb;
+    --text: #2b2622;
+    --text-mid: #6b6056;
+    --text-dim: #9c9183;
+    --accent: #9a9472;
+    --accent-hover: #807a5b;
+    --accent-soft: #c5bf9f;
+    --bot-bubble: #ede6da;
+    --user-bubble: #9a9472;
+    --shadow: 0 1px 2px rgba(43, 38, 34, 0.04), 0 8px 24px rgba(43, 38, 34, 0.06);
   }
 
   body {
@@ -252,7 +253,7 @@
     flex-shrink: 0;
   }
 
-  .send-btn:hover:not(:disabled) { background: #788a78; }
+  .send-btn:hover:not(:disabled) { background: var(--accent-hover); }
 
   .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
